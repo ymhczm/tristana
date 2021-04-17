@@ -1,4 +1,4 @@
-# Tristana（snowpack）
+# Tristana（Snowpack）
 
 Lightweight front-end template based on [React](https://github.com/facebook/react)、[Mobx](https://github.com/mobxjs/mobx)、[Snowpack](https://github.com/snowpackjs/snowpack) and [React-Router](https://github.com/ReactTraining/react-router)
 
