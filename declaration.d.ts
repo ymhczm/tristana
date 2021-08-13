@@ -23,3 +23,11 @@ declare module '*.css' {
 interface Window {
     r: string[];
 }
+
+declare const __SNOWPACK_ENV__;
+interface ImportMeta {
+    env: {
+        NODE_ENV: 'development' | 'test' | 'production';
+        SNOWPACK_PUBLIC_DOMAIN?: string;
+    };
+}

@@ -1,3 +1,5 @@
+const { NODE_ENV } = import.meta.env;
+
 // 基础配置
 export const BASE_LAYOUT = {
     GROD_COL: {
@@ -13,12 +15,12 @@ export const BASE_LAYOUT = {
     }
 };
 
-// export const BASE_API = (process.env.NODE_ENV === 'development' ? 'https://downfuture.com/api/v1/' : (process.env.NODE_ENV == 'test' ? 'https://downfuture.com/api/v1/' : 'https://downfuture.com/api/v1/'));
+// export const BASE_API = (NODE_ENV === 'development' ? 'https://downfuture.com/api/v1/' : (NODE_ENV == 'test' ? 'https://downfuture.com/api/v1/' : 'https://downfuture.com/api/v1/'));
 export const BASE_API = location.origin + '/api/';
 
 export const SOCKET_URL =
-    process.env.NODE_ENV === 'development'
+    NODE_ENV === 'development'
         ? '//localhost:9000/api/v1/'
-        : process.env.NODE_ENV == 'test'
+        : NODE_ENV == 'test'
         ? 'https://downfuture.com/api/v1/'
         : 'https://downfuture.com/api/v1/';
