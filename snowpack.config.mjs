@@ -9,13 +9,15 @@ export default {
         '@src': './src',
         '@assets': './src/assets',
         '@components': './src/components',
-        '@locales': './src/locales',
+        '@locales': './src/locales/',
         '@pages': './src/pages/',
         '@mobx': './src/mobx',
         '@utils': './src/utils',
         '@config': './src/config.ts',
         '@servers': './src/servers.tsx',
-        '@request': './src/request.ts'
+        '@request': './src/request.ts',
+        '@routeConfig': './src/routeConfig.tsx',
+        '@mock': './src/mock/'
     },
     plugins: (() => {
         const plugin = ['snowpack-plugin-less'];

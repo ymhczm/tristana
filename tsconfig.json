@@ -8,7 +8,6 @@
         "forceConsistentCasingInFileNames": true,
         "allowJs": true,
         "outDir": "./dist/",
-        "types": ["vite/client", "node"],
         "resolveJsonModule": true,
         "esModuleInterop": true,
         "noImplicitAny": false,
@@ -25,6 +24,7 @@
         "baseUrl": "./src",
         "paths": {
             "@/*": ["*"],
+            "@src/*": ["./src"],
             "@assets/*": ["assets/*"],
             "@components/*": ["components/*"],
             "@locales/*": ["locales/*"],
@@ -32,7 +32,9 @@
             "@pages/*": ["pages/*"],
             "@mobx/*": ["mobx/*"],
             "@utils/*": ["utils/*"],
-            "@servers/*": ["servers/*"]
+            "@servers/*": ["servers/*"],
+            "@request": ["request"],
+            "@routeConfig": ["routeConfig"]
         }
     },
     "include": ["./src/**/*", "./declaration.d.ts"],
