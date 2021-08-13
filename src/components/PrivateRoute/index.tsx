@@ -3,7 +3,7 @@
  * @Author: Jiang
  * @Date: 2020-03-11 21:42:00
  * @Last Modified by: Jiang
- * @Last Modified time: 2021-02-20 10:49:43
+ * @Last Modified time: 2021-04-01 17:54:16
  */
 
 import React, { lazy } from 'react';
@@ -33,15 +33,14 @@ class PrivateRoute extends React.Component<IProps, IState> {
     }
 
     componentDidMount() {
-        let isAuthenticated = localStorage.token ? true : false;
-        this.setState({ isAuthenticated });
-
-        if (!isAuthenticated) {
-            const { history } = this.props;
-            setTimeout(() => {
-                history.replace('/user/login');
-            }, 1000);
-        }
+        // let isAuthenticated = localStorage.token ? true : false;
+        // this.setState({ isAuthenticated });
+        // if (!isAuthenticated) {
+        //     const { history } = this.props;
+        //     setTimeout(() => {
+        //         history.replace('/user/login');
+        //     }, 1000);
+        // }
     }
 
     render() {
