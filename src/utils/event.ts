@@ -15,6 +15,7 @@ const Event = {
         // @ts-ignore
         let events = { type: type, args: args || {} },
             i = 0,
+            // @ts-ignore
             len = this.message[type].length;
         for (; i < len; i++) {
             // @ts-ignore

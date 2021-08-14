@@ -1,6 +1,8 @@
 import React from 'react';
 import * as Sentry from '@sentry/react';
 import { ConfigProvider } from 'antd';
+// 如何去掉全局引入样式
+import 'antd/dist/antd.css';
 import { configure } from 'mobx';
 import intl from 'react-intl-universal';
 import dayjs from 'dayjs';

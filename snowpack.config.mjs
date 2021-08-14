@@ -12,15 +12,15 @@ export default {
         '@locales': './src/locales/',
         '@pages': './src/pages/',
         '@mobx': './src/mobx',
-        '@utils': './src/utils',
+        '@utils': './src/utils/',
         '@config': './src/config.ts',
-        '@servers': './src/servers.tsx',
+        '@servers': './src/servers/',
         '@request': './src/request.ts',
         '@routeConfig': './src/routeConfig.tsx',
         '@mock': './src/mock/'
     },
     plugins: (() => {
-        const plugin = ['snowpack-plugin-less'];
+        const plugin = ['snowpack-plugin-less', 'snowpack-plugin-relative-css-urls'];
         if (process.env.NODE_ENV === 'development') {
             plugin.push('@snowpack/plugin-typescript');
         }
