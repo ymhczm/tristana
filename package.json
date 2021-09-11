@@ -46,7 +46,7 @@
         "stylelint-config-prettier": "^8.0.2",
         "stylelint-config-standard": "^20.0.0",
         "trtc-js-sdk": "^4.8.5",
-        "typescript": "^4.1.5"
+        "typescript": "^4.4.3"
     },
     "scripts": {
         "dev": "SNOWPACK_PUBLIC_DOMAIN=ikandy NODE_ENV=development snowpack dev",
