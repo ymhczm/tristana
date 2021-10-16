@@ -49,7 +49,7 @@
         "typescript": "^4.4.3"
     },
     "scripts": {
-        "dev": "SNOWPACK_PUBLIC_DOMAIN=ikandy NODE_ENV=development snowpack dev",
+        "start": "SNOWPACK_PUBLIC_DOMAIN=ikandy NODE_ENV=development snowpack dev",
         "build:test": "SNOWPACK_PUBLIC_DOMAIN=ikandy NODE_ENV=test snowpack build",
         "build:prod": "SNOWPACK_PUBLIC_DOMAIN=ikandy NODE_ENV=production snowpack build && SNOWPACK_PUBLIC_DOMAIN=cloud NODE_ENV=production snowpack build",
         "script-name": "babel-node script.js",
