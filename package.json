@@ -1,10 +1,10 @@
 {
-    "name": "test",
+    "name": "{{name}}",
     "version": "1.0.0",
     "private": true,
     "main": "index.js",
-    "description": "test",
-    "author": "Jiang",
+    "description": "{{description}}",
+    "author": "{{author}}",
     "dependencies": {
         "@ant-design/icons": "^4.7.0",
         "@sentry/react": "^6.17.8",
