@@ -3,7 +3,7 @@
  * @Author: Jiang
  * @Date: 2019-06-13 16:45:59
  * @Last Modified by: Jiang
- * @Last Modified time: 2021-04-17 15:56:06
+ * @Last Modified time: 2022-02-16 12:14:55
  */
 
 import React, { Component } from 'react';
@@ -25,7 +25,7 @@ class Login extends Component<IProps> {
     }
 
     // 表单提交
-    handleSubmit = values => {
+    handleSubmit = (values: any) => {
         const { history } = this.props;
         console.log('Success:', values);
         localStorage.token = 'login';

@@ -12,6 +12,12 @@ module.exports = {
         '**/*.txt',
         './src/assets/whiteboard/**'
     ],
+    overrides: [
+        {
+            files: ['**/*.less'],
+            customSyntax: 'postcss-less'
+        }
+    ],
     rules: {
         'at-rule-no-unknown': [
             true,
